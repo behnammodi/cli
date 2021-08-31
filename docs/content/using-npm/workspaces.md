@@ -176,6 +176,22 @@ npm run test --workspaces
 
 Will run the `test` script in both `./packages/a` and `./packages/b`.
 
+Order of run depend on your definition in `workspaces` at `package.json`
+
+```
+{
+  "workspaces": [ "packages/a", "packages/b" ]
+}
+```
+
+Order of run is different with:
+
+```
+{
+  "workspaces": [ "packages/b", "packages/a" ]
+}
+```
+
 ### See also
 
 * [npm install](/commands/npm-install)
