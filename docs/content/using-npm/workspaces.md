@@ -176,7 +176,7 @@ npm run test --workspaces
 
 Will run the `test` script in both `./packages/a` and `./packages/b`.
 
-Order of run depend on your definition in `workspaces` at `package.json`
+commands will be run in each workspace in the order they appear in your `package.json`
 
 ```
 {
