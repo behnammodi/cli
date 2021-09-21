@@ -190,6 +190,16 @@ Order of run is different with:
 {
   "workspaces": [ "packages/b", "packages/a" ]
 }
+
+
+### Ignoring missing scripts
+
+It is not required for all of the workspaces to implement scripts run with the `npm run` command.
+
+By running the command with the `--if-present` flag, npm will ignore workspaces missing target script.
+
+```
+npm run test --workspaces --if-present
 ```
 
 ### See also
